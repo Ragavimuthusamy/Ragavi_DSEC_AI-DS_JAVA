@@ -1,0 +1,117 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello,Java!");
+        System.out.println("Welcome to Programming.");
+        System.out.println("My journey starts today.");
+        
+        
+        
+    }
+}
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter emp_id:");
+        int emp_id=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter emp_name:");
+        String emp_name=sc.nextLine();
+        System.out.println("Enter branch:");
+        String branch=sc.nextLine();
+        System.out.println("Enter salary:");
+        Double salary=sc.nextDouble();
+        System.out.println("Enter experience:");
+        int experience=sc.nextInt();
+        System.out.println(emp_id);
+        System.out.println(emp_name);
+        System.out.println(branch);
+        System.out.println(salary);
+        System.out.println(experience);
+        
+        
+    }
+}
+
+
+class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Student data:");
+        System.out.println("Student name=Ragzz");
+
+        System.out.println("Student department=AI&DS");
+
+        System.out.println("Student age=20");
+
+        System.out.println("CGPA=9.7");
+
+    }
+
+}
+
+import java.util.*;
+
+class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int populaion=sc.nextInt();
+
+        float productprice=sc.nextFloat();
+
+        sc.nextLine();
+
+        String BloodGroupSymbol=sc.nextLine();
+
+        String Accountverified=sc.nextLine();
+
+        String Employeename=sc.nextLine();
+
+        System.out.println("Population:");
+
+        System.out.println("Product price:");
+
+        System.out.println("Blood group symbol:");
+
+        System.out.println("Account verified:");
+
+        System.out.println("Employee name:");
+
+     }
+
+}
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String name="Ragavi";
+        String college="DSEC";
+        String dept="AI&DS";
+        String course="JAVA";
+        System.out.println(name);
+        System.out.println(college);
+        System.out.println(dept);
+        System.out.println(course);
+        
+        
+        
+        
+    }
+}
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Java is simple and Java is powerful");
+        
+        
+        
+    }
+}
+
