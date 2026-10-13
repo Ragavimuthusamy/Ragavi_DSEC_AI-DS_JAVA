@@ -1,0 +1,96 @@
+class Main {
+    public static void main(String[] args){
+        int a=13;
+        int b=22;
+        String result=(%2==0)?"Even number":"Odd number";
+        System.out.println(result);
+        
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        int a=5;
+        int b=30;
+        // String result=(a>b)?"a is greater":"b is greater";
+        // result=(a==b)?"Equal":"not Equal";
+        System.out.println((a==b ? "Equal":(a>b?a:b)));
+        
+        
+    }
+}
+
+    
+class Main {
+    public static void main(String[] args){
+        int a=-9;
+        String result=(a>0)?"positive":(a<0)?"negative":"Zero";
+            System.out.println(result);
+            }
+}
+
+class Main {
+    public static void main(String[] args){
+        int age=18;
+        String result=(age>=18)?"eligible":"not eligible";
+        System.out.println(result);
+        
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+           int a=55;
+        String result=(a%3==0 && a%5==0)?"Divisible by both":"Not divisible by both";
+
+        
+        System.out.println(result);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=13;
+        int b=48;
+        int c=33;
+        int largest=(a>=b && a>=c)?a:(b>=a && b>=c)?b:c;
+        System.out.println(largest);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=-769;
+        //Lastdigit%2==0;
+        String result=(a%2==0)?"yes":"No";
+        System.out.println(result);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=50;
+        int b=47;
+        int c=79;
+        String result=(a>=35 && b>=35 && c>=35)?"pass":"fail";
+        System.out.println(result);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=50;
+        int b=47;
+        int c=79;
+        String result=(a>=35 && b>=35 && c>=35)?"pass":"fail";
+        System.out.println(result);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int amount=5000;
+        Double result=(amount>=2000)?amount-(amount*0.10):amount;
+        System.out.println(result);
+    }
+}
