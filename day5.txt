@@ -1,0 +1,137 @@
+INSERTION:
+
+simport java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]=new int[5];
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        int n=4;
+        System.out.println("Enter index(0 to"+ n +"):");
+        int pos=sc.nextInt();
+        System.out.println("Enter value to insert:");
+        int value = sc.nextInt();
+        if(pos<0||pos>n||n==a.length){
+            System.out.println("Initial insertion");
+        }else{
+            for(int i =n;i>pos;i--){
+                a[i]=a[i-1];
+            }
+            a[pos]=value;
+            n++;
+            for(int i=0;i<n;i++){
+                System.out.print(a[i]+" ");
+            }
+        }
+        sc.close();
+    }
+}
+
+DELETE:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]={10,20,30,40};
+        a[1]=234;
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+UPDATE:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]={10,20,30,40,50};
+        a[1]=90;
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+LINEAR SEARCHING:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int a[]={40,20,50,10,30};
+        int key=30;
+        int pos=-1;
+        for(int i=0;i<a.length;i++){
+            if(a[i]==key){
+                pos=i;
+                break;
+            }
+        }
+        if(pos!=-1)
+            System.out.println("Found an index " + pos);
+        else
+            System.out.println("Not found");
+    }
+}
+
+BINARY SEARCHING:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int a[] = {10, 20, 30, 40, 50};
+        int key = 30;
+        int low=0;
+        int high=a.length-1;
+        int pos=-1;
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(a[mid]==key){
+                pos=mid;
+                break;
+            }else if(key>a[mid]){
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        if(pos!=-1)
+            System.out.println("Found at index "+ pos);
+        else
+            System.out.println("Not found");
+    }
+}
+
+SECOND LARGEST ELEMENT:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]=new int[5];
+        System.out.println("Enter 5 elements:");
+        for(int i=0;i<5;i++){
+            a[i]=sc.nextInt();
+        }
+        int largest=a[0];
+        int second=Integer.MIN_VALUE;
+        for(int i=1;i<5;i++){
+            if(a[i]>largest){
+                second=largest;
+                largest=a[i];
+            }else if(a[i]>second && a[i]<largest){
+                second=a[i];
+            }
+        }
+        if(second==Integer.MIN_VALUE){
+            System.out.println("second largest element not found");
+        }else{
+            System.out.println("Second largest="+second);
+        }
+
+    }
+}
